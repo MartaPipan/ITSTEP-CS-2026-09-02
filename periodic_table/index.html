@@ -3,113 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Періодична таблиця</title>
+    <link rel="stylesheet" href="./style.css">
 
     <style>
-        table {
-            border-collapse: collapse;
-        }
-
-        .periodic {
-            margin: 20px auto;
-        }
-
-        .periodic > tr > td {
-            width: 75px;
-            height: 95px;
-            padding: 0;
-        }
-
-        .element {
-            width: 100%;
-            height: 100%;
-        }
-
-        .element td {
-            border: 1px solid white;
-            padding: 2px;
-        }
-
-        .number {
-            font-size: 12px;
-        }
-
-        .symbol {
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .name {
-            font-size: 11px;
-        }
-
-        .mass {
-            font-size: 10px;
-        }
-
-        .electrons {
-            width: 15px;
-            text-align: center;
-            font-size: 10px;
-        }
-
-        .empty {
-            border: none;
-        }
-
-        <!--LactanoidsActinoids-->
-
-        .additional-elements {
-    margin-top: 20px;
-    margin-left: 75px;
+* {
+    box-sizing: border-box;
 }
 
-.element-row {
-    display: flex;
-    margin-bottom: 5px;
+table {
+    border-collapse: collapse;
 }
 
-.series-name {
+.periodic {
+    margin: 20px auto;
+}
+
+.periodic > tr > td {
     width: 75px;
     height: 95px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 12px;
-    text-align: center;
+    padding: 0;
 }
 
 .element {
-    width: 75px;
-    height: 95px;
+    width: 100%;
+    height: 100%;
+}
 
+.element td {
     border: 1px solid white;
-
-    display: flex;
-    flex-direction: column;
-
-    padding: 3px;
+    padding: 2px;
 }
 
 .number {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .symbol {
     font-size: 25px;
     font-weight: bold;
-    text-align: center;
 }
 
 .name {
-    font-size: 10px;
-    text-align: center;
+    font-size: 11px;
 }
 
 .mass {
-    font-size: 9px;
+    font-size: 10px;
+}
+
+.electrons {
+    width: 15px;
     text-align: center;
+    font-size: 10px;
+}
+
+.empty {
+    border: none;
 }
     </style>
 </head>
@@ -1824,32 +1773,9 @@
                 <td class="mass">294</td>
             </tr>
         </table>
-    </td>
-    
+    </td>    
 
 </tr>
-
-</table>
-<table class="lantanoids">
-    <tr>
-        <td>
-        <table class="element">
-            <tr>
-                <td class="number">117</td>
-                <td class="electrons" rowspan="4">2 <br>8 18 32 32 18 7</td>
-            </tr>
-            <tr>
-                <td class="symbol">Ts</td>
-            </tr>
-            <tr>
-                <td class="name">Унунсептій</td>
-            </tr>
-            <tr>
-                <td class="mass">294</td>
-            </tr>
-        </table>
-
-    </tr>
 </table>
    
     </tbody>
@@ -1864,6 +1790,15 @@
             <div class="symbol">La</div>
             <div class="name">Лантан</div>
             <div class="mass">138.905</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                32<br>
+                8<br>
+                3
+            </div>
         </div>
 
         <div class="element lanthanide">
@@ -1871,6 +1806,14 @@
             <div class="symbol">Ce</div>
             <div class="name">Церій</div>
             <div class="mass">140.116</div>
+            <div class="electrons">
+                2 <br>
+                8 <br>
+                18 <br>
+                19 <br>
+                9 <br>
+                2
+            </div>
         </div>
 
         <div class="element lanthanide">
@@ -1878,6 +1821,14 @@
             <div class="symbol">Pr</div>
             <div class="name">Празеодим</div>
             <div class="mass">140.908</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                21<br>
+                8<br>
+                2
+            </div>
         </div>
 
         <div class="element lanthanide">
@@ -1885,6 +1836,168 @@
             <div class="symbol">Nd</div>
             <div class="name">Неодим</div>
             <div class="mass">144.242</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                22<br>
+                8<br>
+                2
+            </div>
+        </div>
+        <div class="element lanthanide">
+            <div class="number">61</div>
+            <div class="symbol">Pm</div>
+            <div class="name">Прометій</div>
+            <div class="mass">145</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                23<br>
+                8<br>
+                2
+            </div>
+        </div>
+        <div class="element lanthanide">
+            <div class="number">62</div>
+            <div class="symbol">Sm</div>
+            <div class="name">Самарій</div>
+            <div class="mass">150.36</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                24<br>
+                8<br>
+                2
+            </div>
+        </div>
+        <div class="element lanthanide">
+            <div class="number">63</div>
+            <div class="symbol">Eu</div>
+            <div class="name">Європій</div>
+            <div class="mass">151.964</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                25<br>
+                8<br>
+                2
+            </div>
+        </div>
+        <div class="element lanthanide">
+            <div class="number">64</div>
+            <div class="symbol">Gd</div>
+            <div class="name">Гадоліній</div>
+            <div class="mass">157.25</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                25<br>
+                9<br>
+                2
+            </div>
+        </div>
+        <div class="element lanthanide">
+            <div class="number">65</div>
+            <div class="symbol">Tb</div>
+            <div class="name">Тербій</div>
+            <div class="mass">158.92535</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                27<br>
+                8<br>
+                2
+            </div>
+        </div>
+        <div class="element lanthanide">
+            <div class="number">66</div>
+            <div class="symbol">Dy</div>
+            <div class="name">Диспрозій</div>
+            <div class="mass">162.5</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                28<br>
+                8<br>
+                2
+            </div>
+        </div>
+        <div class="element lanthanide">
+            <div class="number">67</div>
+            <div class="symbol">Ho</div>
+            <div class="name">Гольмій</div>
+            <div class="mass">164.93031</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                29<br>
+                8<br>
+                2
+            </div>
+        </div>
+        <div class="element lanthanide">
+            <div class="number">68</div>
+            <div class="symbol">Er</div>
+            <div class="name">Ербій</div>
+            <div class="mass">167.259</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                30<br>
+                8<br>
+                2
+            </div>
+        </div>
+        <div class="element lanthanide">
+            <div class="number">69</div>
+            <div class="symbol">Tm</div>
+            <div class="name">Тулій</div>
+            <div class="mass">168.9342</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                31<br>
+                8<br>
+                2
+            </div>
+        </div>
+        <div class="element lanthanide">
+            <div class="number">70</div>
+            <div class="symbol">Yb</div>
+            <div class="name">Ітербій</div>
+            <div class="mass">173.054</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                8<br>
+                2
+            </div>
+        </div>
+        <div class="element lanthanide">
+            <div class="number">71</div>
+            <div class="symbol">Lu</div>
+            <div class="name">Лютецій</div>
+            <div class="mass">174.9668</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                9<br>
+                2
+            </div>
         </div>
 
     </div>
@@ -1899,9 +2012,118 @@
             <div class="symbol">Ac</div>
             <div class="name">Актиній</div>
             <div class="mass">227</div>
+            <div class="electrons"></div>
+        </div>
+        <div class="element actinide">
+            <div class="number">90</div>
+            <div class="symbol">Th</div>
+            <div class="name">Торій</div>
+            <div class="mass">232.038</div>
+            <div class="electrons"></div>
         </div>
 
+        <div class="element actinide">
+            <div class="number">91</div>
+            <div class="symbol">Pa</div>
+            <div class="name">Протактиній</div>
+            <div class="mass">231.036</div>
+            <div class="electrons"></div>
+        </div>
 
+        <div class="element actinide">
+            <div class="number">92</div>
+            <div class="symbol">U</div>
+            <div class="name">Уран</div>
+            <div class="mass">238.029</div>
+            <div class="electrons"></div>
+        </div>
+        <div class="element actinide">
+            <div class="number">93</div>
+            <div class="symbol"></div>
+            <div class="name"></div>
+            <div class="mass"></div>
+            <div class="electrons"></div>
+        </div>
+
+        <div class="element actinide">
+            <div class="number">94</div>
+            <div class="symbol">Pa</div>
+            <div class="name">Протактиній</div>
+            <div class="mass">231.036</div>
+            <div class="electrons"></div>
+        </div>
+
+        <div class="element actinide">
+            <div class="number">95</div>
+            <div class="symbol">U</div>
+            <div class="name">Уран</div>
+            <div class="mass">238.029</div>
+            <div class="electrons"></div>
+            
+        </div>
+        <div class="element actinide">
+            <div class="number">96</div>
+            <div class="symbol">Th</div>
+            <div class="name">Торій</div>
+            <div class="mass">232.038</div>
+            <div class="electrons"></div>
+        </div>
+
+        <div class="element actinide">
+            <div class="number">97</div>
+            <div class="symbol">Pa</div>
+            <div class="name">Протактиній</div>
+            <div class="mass">231.036</div>
+            <div class="electrons"></div>
+        </div>
+
+        <div class="element actinide">
+            <div class="number">98</div>
+            <div class="symbol">U</div>
+            <div class="name">Уран</div>
+            <div class="mass">238.029</div>
+            <div class="electrons"></div>
+        </div>
+
+        <div class="element actinide">
+            <div class="number">99</div>
+            <div class="symbol">Th</div>
+            <div class="name">Торій</div>
+            <div class="mass">232.038</div>
+            <div class="electrons"></div>
+        </div>
+
+        <div class="element actinide">
+            <div class="number">100</div>
+            <div class="symbol">Pa</div>
+            <div class="name">Протактиній</div>
+            <div class="mass">231.036</div>
+            <div class="electrons"></div>
+        </div>
+
+        <div class="element actinide">
+            <div class="number">101</div>
+            <div class="symbol">U</div>
+            <div class="name">Уран</div>
+            <div class="mass">238.029</div>
+            <div class="electrons"></div>
+        </div>
+
+        <div class="element actinide">
+            <div class="number">102</div>
+            <div class="symbol">Th</div>
+            <div class="name">Торій</div>
+            <div class="mass">232.038</div>
+            <div class="electrons"></div>
+        </div>
+
+        <div class="element actinide">
+            <div class="number">103</div>
+            <div class="symbol">Lr</div>
+            <div class="name">Лоуренсій</div>
+            <div class="mass">262</div>
+            <div class="electrons">2 <br>8 18 32 32 8 <br>3</div>
+        </div>
     </div>
 
 </div>    
