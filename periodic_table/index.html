@@ -5,58 +5,1775 @@
     <title>Періодична таблиця</title>
 
     <style>
-        table {}
+        table {
+            border-collapse: collapse;
+        }
 
+        .periodic {
+            margin: 20px auto;
+        }
+
+        .periodic > tr > td {
+            width: 75px;
+            height: 95px;
+            padding: 0;
+        }
+
+        .element {
+            width: 100%;
+            height: 100%;
+        }
+
+        .element td {
+            border: 1px solid white;
+            padding: 2px;
+        }
+
+        .number {
+            font-size: 12px;
+        }
+
+        .symbol {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .name {
+            font-size: 11px;
+        }
+
+        .mass {
+            font-size: 10px;
+        }
+
+        .electrons {
+            width: 15px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .empty {
+            border: none;
+        }
     </style>
 </head>
 
 <body>
+    <h1>Періодична таблиця</h1>
 
 <table class="periodic">
+    <thead>
+        <tr class="head">
+            <th>1</th>
+            <th>2</th>
+            <th>3</th> 
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+            <th>12</th>
+            <th>13</th>
+            <th>14</th>
+            <th>15</th>
+            <th>16</th>
+            <th>17</th>
+            <th>18</th>
+        </tr>
+    </thead>
+    <tbody>
 
 <!-- ПЕРІОД 1 -->
 <tr>
+
+    <!-- H -->
     <td>
-        <table>
+        <table class="element">
             <tr>
-                <td>1</td>
-                <td rowspan="4">1</td>
+                <td class="number">1</td>
+                <td class="electrons" rowspan="4">1</td>
             </tr>
             <tr>
-                <td>H</td>
+                <td class="symbol">H</td>
             </tr>
             <tr>
-                <td>Водень</td>
+                <td class="name">Водень</td>
             </tr>
             <tr>
-                <td>1.00794</td>
+                <td class="mass">1.00794</td>
             </tr>
         </table>
     </td>
 
     <!-- 16 порожніх клітинок -->
-    <td colspan="16" ></td>
+    <td colspan="16" class="empty"></td>
 
+    <!-- He -->
     <td>
-        <table>
+        <table class="element">
             <tr>
-                <td>2</td>
-                <td rowspan="4">2</td>
+                <td class="number">2</td>
+                <td class="electrons" rowspan="4">2</td>
             </tr>
             <tr>
-                <td>He</td>
+                <td class="symbol">He</td>
             </tr>
             <tr>
-                <td>Гелій</td>
+                <td class="name">Гелій</td>
             </tr>
             <tr>
-                <td>4.0026</td>
+                <td class="mass">4.0026</td>
             </tr>
         </table>
     </td>
 
 </tr>
-</table>
 
+
+<!-- ПЕРІОД 2 -->
+<tr>
+
+    <!-- Li -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">3</td>
+                <td class="electrons" rowspan="4">2<br>1</td>
+            </tr>
+            <tr>
+                <td class="symbol">Li</td>
+            </tr>
+            <tr>
+                <td class="name">Літій</td>
+            </tr>
+            <tr>
+                <td class="mass">6.941</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- Be -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">4</td>
+                <td class="electrons" rowspan="4">2<br>2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Be</td>
+            </tr>
+            <tr>
+                <td class="name">Берилій</td>
+            </tr>
+            <tr>
+                <td class="mass">9.0122</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- порожні клітинки -->
+    <td colspan="10" class="empty"></td>
+
+    <!-- B -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">5</td>
+                <td class="electrons" rowspan="4">2<br>3</td>
+            </tr>
+            <tr>
+                <td class="symbol">B</td>
+            </tr>
+            <tr>
+                <td class="name">Бор</td>
+            </tr>
+            <tr>
+                <td class="mass">10.81</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- C -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">6</td>
+                <td class="electrons" rowspan="4">2<br>4</td>
+            </tr>
+            <tr>
+                <td class="symbol">C</td>
+            </tr>
+            <tr>
+                <td class="name">Вуглець</td>
+            </tr>
+            <tr>
+                <td class="mass">12.011</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- N -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">7</td>
+                <td class="electrons" rowspan="4">2<br>5</td>
+            </tr>
+            <tr>
+                <td class="symbol">N</td>
+            </tr>
+            <tr>
+                <td class="name">Азот</td>
+            </tr>
+            <tr>
+                <td class="mass">14.007</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- O -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">8</td>
+                <td class="electrons" rowspan="4">2<br>6</td>
+            </tr>
+            <tr>
+                <td class="symbol">O</td>
+            </tr>
+            <tr>
+                <td class="name">Кисень</td>
+            </tr>
+            <tr>
+                <td class="mass">15.999</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- F -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">9</td>
+                <td class="electrons" rowspan="4">2<br>7</td>
+            </tr>
+            <tr>
+                <td class="symbol">F</td>
+            </tr>
+            <tr>
+                <td class="name">Флуор</td>
+            </tr>
+            <tr>
+                <td class="mass">18.998</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- Ne -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">10</td>
+                <td class="electrons" rowspan="4">2<br>8</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ne</td>
+            </tr>
+            <tr>
+                <td class="name">Неон</td>
+            </tr>
+            <tr>
+                <td class="mass">20.180</td>
+            </tr>
+        </table>
+    </td>
+
+</tr>
+
+
+<!-- ПЕРІОД 3 -->
+<tr>
+
+    <!-- Na -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">11</td>
+                <td class="electrons" rowspan="4">2<br>8<br>1</td>
+            </tr>
+            <tr>
+                <td class="symbol">Na</td>
+            </tr>
+            <tr>
+                <td class="name">Натрій</td>
+            </tr>
+            <tr>
+                <td class="mass">22.990</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- Mg -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">12</td>
+                <td class="electrons" rowspan="4">2<br>8<br>2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Mg</td>
+            </tr>
+            <tr>
+                <td class="name">Магній</td>
+            </tr>
+            <tr>
+                <td class="mass">24.305</td>
+            </tr>
+        </table>
+    </td>
+
+    <td colspan="10" class="empty"></td>
+
+    <!-- Al -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">13</td>
+                <td class="electrons" rowspan="4">2<br>8<br>3</td>
+            </tr>
+            <tr>
+                <td class="symbol">Al</td>
+            </tr>
+            <tr>
+                <td class="name">Алюміній</td>
+            </tr>
+            <tr>
+                <td class="mass">26.982</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- Si -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">14</td>
+                <td class="electrons" rowspan="4">2<br>8<br>4</td>
+            </tr>
+            <tr>
+                <td class="symbol">Si</td>
+            </tr>
+            <tr>
+                <td class="name">Кремній</td>
+            </tr>
+            <tr>
+                <td class="mass">28.085</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- P -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">15</td>
+                <td class="electrons" rowspan="4">2<br>8<br>5</td>
+            </tr>
+            <tr>
+                <td class="symbol">P</td>
+            </tr>
+            <tr>
+                <td class="name">Фосфор</td>
+            </tr>
+            <tr>
+                <td class="mass">30.974</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- S -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">16</td>
+                <td class="electrons" rowspan="4">2<br>8<br>6</td>
+            </tr>
+            <tr>
+                <td class="symbol">S</td>
+            </tr>
+            <tr>
+                <td class="name">Сірка</td>
+            </tr>
+            <tr>
+                <td class="mass">32.06</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- Cl -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">17</td>
+                <td class="electrons" rowspan="4">2<br>8<br>7</td>
+            </tr>
+            <tr>
+                <td class="symbol">Cl</td>
+            </tr>
+            <tr>
+                <td class="name">Хлор</td>
+            </tr>
+            <tr>
+                <td class="mass">35.45</td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- Ar -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">18</td>
+                <td class="electrons" rowspan="4">2<br>8<br>8</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ar</td>
+            </tr>
+            <tr>
+                <td class="name">Аргон</td>
+            </tr>
+            <tr>
+                <td class="mass">39.948</td>
+            </tr>
+        </table>
+    </td>
+
+</tr>
+<!-- ПЕРІОД 4 -->
+<tr>
+
+    <!-- K -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">19</td>
+                <td class="electrons" rowspan="4">1</td>
+            </tr>
+            <tr>
+                <td class="symbol">K</td>
+            </tr>
+            <tr>
+                <td class="name">Водень</td>
+            </tr>
+            <tr>
+                <td class="mass">1.00794</td>
+            </tr>
+        </table>
+    </td>
+    <!-- Ca -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">20</td>
+                <td class="electrons" rowspan="4">Ca</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ca</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 21 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">21</td>
+                <td class="electrons" rowspan="4"></td>
+            </tr>
+            <tr>
+                <td class="symbol">Sc</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 22 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">22</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ti</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 23 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">23</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">V</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 24 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">24</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Cr</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 25 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">25</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Mn</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 26 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">26</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Fe</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 27 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">27</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Co</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 28 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">28</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ni</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 29 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">29</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Cu</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 30 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">30</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Zn</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 31 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">31</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ga</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 32 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">32</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ge</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 33 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">33</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">As</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 34 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">34</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Se</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 35 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">35</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Br</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 36 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">36</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Kr</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    
+</tr>
+<!-- ПЕРІОД 5 -->
+<tr>
+
+    <!-- 37-->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">37</td>
+                <td class="electrons" rowspan="4">1</td>
+            </tr>
+            <tr>
+                <td class="symbol">Rb</td>
+            </tr>
+            <tr>
+                <td class="name">Водень</td>
+            </tr>
+            <tr>
+                <td class="mass">1.00794</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 38 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">38</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Sr</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 39 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">39</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Y</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 40 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">40</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Zr</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 41 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">41</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Nb</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 42 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">42</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Mo</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 43 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">43</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Tc</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 44 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">44</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ru</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 45 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">45</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Rh</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 46 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">46</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Pd</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 47 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">47</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ag</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 48 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">48</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Cd</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 49 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">49</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">In</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 50 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">50</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Sn</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 51 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">51</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Sb</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 52 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">52</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Te</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 53 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">53</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">I</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 54 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">54</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Xe</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    
+
+</tr>
+<!-- ПЕРІОД 6 -->
+<tr>
+
+    <!-- 55 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">55</td>
+                <td class="electrons" rowspan="4">1</td>
+            </tr>
+            <tr>
+                <td class="symbol">Cs</td>
+            </tr>
+            <tr>
+                <td class="name">Водень</td>
+            </tr>
+            <tr>
+                <td class="mass">1.00794</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 56 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">56</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ba</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 57-71 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">57-71</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">He</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 72 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">72</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Hf</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 73 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">73</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ta</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 74 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">74</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">W</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 75 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">75</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Re</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 76 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">76</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Os</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 77 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">77</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ir</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 78 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">78</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Pt</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 79 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">79</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Au</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">196.96657</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 80 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">80</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Hg</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">4.0026</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 81 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">81</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Tl</td>
+            </tr>
+            <tr>
+                <td class="name">Taлій</td>
+            </tr>
+            <tr>
+                <td class="mass">204.3833</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 82 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">82</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Pb</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">207.2</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 83 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">83</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Bi</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">208.9804</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 84 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">84</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Po</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">209</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 85 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">85</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">At</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">210</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 86 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">86</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Rn</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">222</td>
+            </tr>
+        </table>
+    </td>
+    
+
+</tr>
+<!-- ПЕРІОД 7 -->
+<tr>
+
+    <!--87  -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">87</td>
+                <td class="electrons" rowspan="4">2 8 18 32 18 8 2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Fr</td>
+            </tr>
+            <tr>
+                <td class="name">Водень</td>
+            </tr>
+            <tr>
+                <td class="mass">223</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 88 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">88</td>
+                <td class="electrons" rowspan="4">2 8 18 32 18 8 2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ra</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">226</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 89 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">89-103</td>
+                <td class="electrons" rowspan="4">2</td>
+            </tr>
+            <tr>
+                <td class="symbol"></td>
+            </tr>
+            <tr>
+                <td class="name"></td>
+            </tr>
+            <tr>
+                <td class="mass"></td>
+            </tr>
+        </table>
+    </td>
+    <!-- 104 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">104</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 10 2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Rf</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">261</td>
+            </tr>
+        </table>
+    </td>
+    <!--105  -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">105</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 11 2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Db</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">268</td>
+            </tr>
+        </table>
+    </td>
+    <!--  106-->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">106</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 12 2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Sg</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">271</td>
+            </tr>
+        </table>
+    </td>
+    <!--107  -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">107</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 13 2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Bh</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">272</td>
+            </tr>
+        </table>
+    </td>
+    <!--108  -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">108</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 14 2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Hs</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">270</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 109 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">109</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 15 2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Mt</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">278.16</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 110 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">110</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 17 1</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ds</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">281.17</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 111 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">111</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 18 1</td>
+            </tr>
+            <tr>
+                <td class="symbol">Rg</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">281.16</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 112 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">112</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 18 2</td>
+            </tr>
+            <tr>
+                <td class="symbol">Cn</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">285</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 113 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">113</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 18 3</td>
+            </tr>
+            <tr>
+                <td class="symbol">Nh</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">284</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 114 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">114</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 18 4</td>
+            </tr>
+            <tr>
+                <td class="symbol">Fl</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">289</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 115 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">115</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 18 5</td>
+            </tr>
+            <tr>
+                <td class="symbol">Mc</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">288</td>
+            </tr>
+        </table>
+    </td>
+    <!--  116-->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">116</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 18 6</td>
+            </tr>
+            <tr>
+                <td class="symbol">Lv</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">293</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 117 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">117</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 18 7</td>
+            </tr>
+            <tr>
+                <td class="symbol">Ts</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">294</td>
+            </tr>
+        </table>
+    </td>
+    <!-- 118 -->
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">118</td>
+                <td class="electrons" rowspan="4">2 8 18 32 32 18 8</td>
+            </tr>
+            <tr>
+                <td class="symbol">Og</td>
+            </tr>
+            <tr>
+                <td class="name">Гелій</td>
+            </tr>
+            <tr>
+                <td class="mass">294</td>
+            </tr>
+        </table>
+    </td>
+    
+
+</tr>
+
+</table>
+   
+    </tbody>
 </body>
 </html>
