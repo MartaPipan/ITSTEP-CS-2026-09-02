@@ -19,8 +19,8 @@ table {
 }
 
 .periodic > tr > td {
-    width: 75px;
-    height: 95px;
+    width: 80px;
+    height: 82px;
     padding: 0;
 }
 
@@ -60,11 +60,24 @@ table {
 .empty {
     border: none;
 }
+
+.col-alkali-metal           { background-color: #ffb3ba; } /* Лужні метали*/
+.col-alkaline-earth-metal    { background-color: #fffcba; } /* Лужноземельні метали*/
+.cor-transition-metal       { background-color: #ffffba; } /* Перехідні метали */
+.col-metalloid              { background-color: #baffc9; } /* Verde Alface Claro */
+.col-non-metal              { background-color: #bae1ff; } /* Azul Céu Claro */
+.col-noble-gas              { background-color: #e8bcf0; } /* Lavanda/Violeta */
+.col-actinide               { background-color: #f3c68f; } /* Pêssego */
+.col-cinza                  { background-color: #e0e0e0; } /* Cinza Neutro (Elementos Desconhecidos) */
+.col-lantanoide {background-color: lightpink}
+.col-actinide { background-color: lightblue}
+
     </style>
 </head>
 
 <body>
     <h1>Періодична таблиця</h1>
+    <p><span class="col-alkali-metal">лужні метали</span><span class="col-alkaline-earth-metal">Лужноземельні метали</span><span class="">напівметали</span></p>
 
 <table class="periodic">
     <thead>
@@ -144,7 +157,7 @@ table {
     <td class="period">II</td>
     <!-- Li -->
     <td>
-        <table class="element">
+        <table class="element col-alkali-metal">
             <tr>
                 <td class="number">3</td>
                 <td class="electrons" rowspan="4">2<br>1</td>
@@ -185,7 +198,7 @@ table {
 
     <!-- B -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">5</td>
                 <td class="electrons" rowspan="4">2<br>3</td>
@@ -305,7 +318,7 @@ table {
     <td class="period">III</td>
     <!-- Na -->
     <td>
-        <table class="element">
+        <table class="element col-alkali-metal">
             <tr>
                 <td class="number">11</td>
                 <td class="electrons" rowspan="4">2<br>8<br>1</td>
@@ -364,7 +377,7 @@ table {
 
     <!-- Si -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">14</td>
                 <td class="electrons" rowspan="4">2<br>8<br>4</td>
@@ -463,7 +476,7 @@ table {
     <td class="period">IV</td>
     <!-- K -->
     <td>
-        <table class="element">
+        <table class="element col-alkali-metal">
             <tr>
                 <td class="number">19</td>
                 <td class="electrons" rowspan="4">2<br> 8 <br>8 <br>1</td>
@@ -697,7 +710,7 @@ table {
     </td>
     <!-- 32 -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">32</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 4</td>
@@ -715,7 +728,7 @@ table {
     </td>
     <!-- 33 -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">33</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 5</td>
@@ -792,7 +805,7 @@ table {
     <td class="period">V</td>
     <!-- 37-->
     <td>
-        <table class="element">
+        <table class="element col-alkali-metal">
             <tr>
                 <td class="number">37</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 8 <br>1</td>
@@ -1045,7 +1058,7 @@ table {
     </td>
     <!-- 51 -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">51</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 18 5</td>
@@ -1063,7 +1076,7 @@ table {
     </td>
     <!-- 52 -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">52</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 18 6</td>
@@ -1123,7 +1136,7 @@ table {
     <td class="period">VI</td>
     <!-- 55 -->
     <td>
-        <table class="element">
+        <table class="element col-alkali-metal">
             <tr>
                 <td class="number">55</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 18 8 <br>1</td>
@@ -1453,7 +1466,7 @@ table {
     <td class="period">VII</td>
     <!--87  -->
     <td>
-        <table class="element">
+        <table class="element col-alkali-metal">
             <tr>
                 <td class="number">87</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 18 8<br> 2</td>
@@ -2012,109 +2025,221 @@ table {
             <div class="symbol">Ac</div>
             <div class="name">Актиній</div>
             <div class="mass">227</div>
-            <div class="electrons"></div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                18<br>
+                9<br>
+                2
+            </div>
         </div>
         <div class="element actinide">
             <div class="number">90</div>
             <div class="symbol">Th</div>
             <div class="name">Торій</div>
-            <div class="mass">232.038</div>
-            <div class="electrons"></div>
+            <div class="mass">232.03806</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                18<br>
+                10<br>
+                2
+            </div>
         </div>
 
         <div class="element actinide">
             <div class="number">91</div>
             <div class="symbol">Pa</div>
             <div class="name">Протактиній</div>
-            <div class="mass">231.036</div>
-            <div class="electrons"></div>
+            <div class="mass">231.03587</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                20<br>
+                9<br>
+                2
+            </div>
         </div>
 
         <div class="element actinide">
             <div class="number">92</div>
             <div class="symbol">U</div>
             <div class="name">Уран</div>
-            <div class="mass">238.029</div>
-            <div class="electrons"></div>
+            <div class="mass">238.02892</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                21<br>
+                9<br>
+                2
+            </div>
         </div>
         <div class="element actinide">
             <div class="number">93</div>
-            <div class="symbol"></div>
-            <div class="name"></div>
-            <div class="mass"></div>
-            <div class="electrons"></div>
+            <div class="symbol">Np</div>
+            <div class="name">Нептуній</div>
+            <div class="mass">237</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                22<br>
+                9<br>
+                2
+            </div>
         </div>
 
         <div class="element actinide">
             <div class="number">94</div>
-            <div class="symbol">Pa</div>
-            <div class="name">Протактиній</div>
-            <div class="mass">231.036</div>
-            <div class="electrons"></div>
+            <div class="symbol">Pu</div>
+            <div class="name">Плутоній</div>
+            <div class="mass">244</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                24<br>
+                8<br>
+                2
+            </div>
         </div>
 
         <div class="element actinide">
             <div class="number">95</div>
-            <div class="symbol">U</div>
-            <div class="name">Уран</div>
-            <div class="mass">238.029</div>
-            <div class="electrons"></div>
+            <div class="symbol">Am</div>
+            <div class="name">Америцій</div>
+            <div class="mass">243</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                25<br>
+                8<br>
+                2
+            </div>
             
         </div>
         <div class="element actinide">
             <div class="number">96</div>
-            <div class="symbol">Th</div>
-            <div class="name">Торій</div>
-            <div class="mass">232.038</div>
-            <div class="electrons"></div>
+            <div class="symbol">Cm</div>
+            <div class="name">Кюрій</div>
+            <div class="mass">247</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                25<br>
+                9<br>
+                2
+            </div>
         </div>
 
         <div class="element actinide">
             <div class="number">97</div>
-            <div class="symbol">Pa</div>
-            <div class="name">Протактиній</div>
-            <div class="mass">231.036</div>
-            <div class="electrons"></div>
+            <div class="symbol">Bk</div>
+            <div class="name">Берклій</div>
+            <div class="mass">247</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                27<br>
+                8<br>
+                2
+            </div>
         </div>
 
         <div class="element actinide">
             <div class="number">98</div>
-            <div class="symbol">U</div>
-            <div class="name">Уран</div>
-            <div class="mass">238.029</div>
-            <div class="electrons"></div>
+            <div class="symbol">Cf</div>
+            <div class="name">Каліфорній</div>
+            <div class="mass">251</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                28<br>
+                8<br>
+                2
+            </div>
         </div>
 
         <div class="element actinide">
             <div class="number">99</div>
-            <div class="symbol">Th</div>
-            <div class="name">Торій</div>
-            <div class="mass">232.038</div>
-            <div class="electrons"></div>
+            <div class="symbol">Es</div>
+            <div class="name">Ейнштейній</div>
+            <div class="mass">252</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                29<br>
+                8<br>
+                2
+            </div>
         </div>
 
         <div class="element actinide">
             <div class="number">100</div>
-            <div class="symbol">Pa</div>
-            <div class="name">Протактиній</div>
-            <div class="mass">231.036</div>
-            <div class="electrons"></div>
+            <div class="symbol">Fm</div>
+            <div class="name">Фермій</div>
+            <div class="mass">257</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                30<br>
+                8<br>
+                2
+            </div>
         </div>
 
         <div class="element actinide">
             <div class="number">101</div>
-            <div class="symbol">U</div>
-            <div class="name">Уран</div>
-            <div class="mass">238.029</div>
-            <div class="electrons"></div>
+            <div class="symbol">Md</div>
+            <div class="name">Менделєвій</div>
+            <div class="mass">258</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                31<br>
+                8<br>
+                2
+            </div>
         </div>
 
         <div class="element actinide">
             <div class="number">102</div>
-            <div class="symbol">Th</div>
-            <div class="name">Торій</div>
-            <div class="mass">232.038</div>
-            <div class="electrons"></div>
+            <div class="symbol">No</div>
+            <div class="name">Нобелій</div>
+            <div class="mass">259</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                32<br>
+                8<br>
+                2
+            </div>
         </div>
 
         <div class="element actinide">
@@ -2122,7 +2247,15 @@ table {
             <div class="symbol">Lr</div>
             <div class="name">Лоуренсій</div>
             <div class="mass">262</div>
-            <div class="electrons">2 <br>8 18 32 32 8 <br>3</div>
+            <div class="electrons">
+                2<br>
+                8<br>
+                18<br>
+                32<br>
+                32<br>
+                8<br>
+                3
+            </div>
         </div>
     </div>
 

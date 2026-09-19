@@ -4,19 +4,22 @@
 
 .element-row {
     display: flex;
-    margin-bottom: 5px;
+    flex-wrap: nowrap;
+    margin-bottom: 1px;
 }
 
 /* назва Лантаноїди / Актиноїди */
 .series-name {
-    width: 75px;
-    height: 95px;
+    width: 90px;
+    height: 82px;
 }
 
 /* сама клітинка */
 .element-row > .element {
-    width: 75px;
-    height: 95px;
+    width: 80px;
+    height: 82px;
+    min-width: 80px;
+    flex-shrink: 0;
     border: 1px solid white;
     padding: 2px;
     position: relative;
