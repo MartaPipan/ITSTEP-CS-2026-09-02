@@ -9,6 +9,11 @@
 * {
     box-sizing: border-box;
 }
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
 
 table {
     border-collapse: collapse;
@@ -63,12 +68,15 @@ table {
 
 .col-alkali-metal           { background-color: #ffb3ba; } /* Лужні метали*/
 .col-alkaline-earth-metal    { background-color: #fffcba; } /* Лужноземельні метали*/
-.cor-transition-metal       { background-color: #ffffba; } /* Перехідні метали */
-.col-metalloid              { background-color: #baffc9; } /* Verde Alface Claro */
-.col-non-metal              { background-color: #bae1ff; } /* Azul Céu Claro */
-.col-noble-gas              { background-color: #e8bcf0; } /* Lavanda/Violeta */
+.col-transition-metal       { background-color: #ffffba; } /* Перехідні метали */
+.col-metalloid              { background-color: #baffc9; } /* Напівметали */
+.col-non-metal              { background-color: #bae1ff; } /* Неметали */
+.col-noble-gas              { background-color: #e8bcf0; } /* Благородні гази */
 .col-actinide               { background-color: #f3c68f; } /* Pêssego */
 .col-cinza                  { background-color: #e0e0e0; } /* Cinza Neutro (Elementos Desconhecidos) */
+
+/* Post-transition metals — метали після переходу */ .col-post-transition-metal { background-color: #d5c6e0; }
+
 .col-lantanoide {background-color: lightpink}
 .col-actinide { background-color: lightblue}
 
@@ -76,8 +84,20 @@ table {
 </head>
 
 <body>
+    <div class="container">
     <h1>Періодична таблиця</h1>
-    <p><span class="col-alkali-metal">лужні метали</span><span class="col-alkaline-earth-metal">Лужноземельні метали</span><span class="">напівметали</span></p>
+    <div class="legend">
+        <!-- Невідомо --> <span class="col-unknown"> Невідомо </span> 
+        <!-- Лужні метали --> <span class="col-alkali-metal"> Лужні метали </span>
+        <!-- Лужноземельні метали --> <span class="col-alkaline-earth-metal"> Лужноземельні метали </span> 
+        <!-- Перехідні метали --> <span class="col-transition-metal"> Перехідні метали </span> 
+        <!-- Post-transition metals --> <span class="col-post-transition-metal"> Метали після переходу </span> 
+        <!-- Напівметали --> <span class="col-metalloid"> Напівметали </span>
+        <!-- Інші неметали --> <span class="col-other-non-metal"> Інші неметали </span> 
+        <!-- Благородні гази --> <span class="col-noble-gas"> Благородні гази </span>
+        <!-- Лантаноїди --> <span class="col-lanthanide"> Лантаноїди </span> 
+        <!-- Актиноїди --> <span class="col-actinide"> Актиноїди </span> 
+    </div>                    
 
 <table class="periodic">
     <thead>
@@ -2259,6 +2279,7 @@ table {
         </div>
     </div>
 
+</div>
 </div>    
 </body>
 </html>

@@ -1,5 +1,21 @@
+.container {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.legend { display: flex; /* Дозволяє елементам переходити на новий рядок при зменшенні ширини екрана */ 
+    justify-content: center;
+    flex-wrap: wrap; /* Відстань між кольоровими блоками */ 
+    gap: 8px; /* Відступ зверху і знизу */ 
+    margin: 20px 0; } /* Кожен пункт легенди */
+
+.legend span { display: inline-block; /* Відступ всередині кольорового блоку */ 
+    padding: 8px 12px; /* Текст не переноситься всередині одного блоку */ 
+    white-space: nowrap; font-size: 14px; }
+
 .additional-elements {
-    margin-top: 20px;
+    width: max-content;
+    margin: 0px auto;
 }
 
 .element-row {
@@ -68,3 +84,4 @@
 .actinide {
     background-color: lightblue;
 }
+
