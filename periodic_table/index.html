@@ -9,6 +9,18 @@
 * {
     box-sizing: border-box;
 }
+.col-h                      {background-color: rgba(6, 243, 211, 0.662);}
+.col-alkali-metal           { background-color: #d5ce0ab2; } /* Лужні метали*/
+.col-alkaline-earth-metal    { background-color: #f2e71296; } /* Лужноземельні метали*/
+.col-transition-metal       { background-color: rgba(255, 160, 122, 0.405); } /* Перехідні метали */
+.col-post-transition-metal   {background-color: rgba(135, 198, 198, 0.733);}/* Post-transition metals — метали після переходу */
+.col-metalloid              { background-color: #58ddc0; } /* Напівметали */
+.col-noble-gas              { background-color: #cf87b79d; } /* Благородні гази */
+.col-actinide               { background-color:  rgba(201, 110, 35, 0.563)} 
+.col-lanthanide              { background-color: lightpink;}
+.col-unknown                 { background-color: #e0e0e0; }
+.col-non-metal               {background-color: #55e66ba7;}
+
 h1{
     text-align: center;
     margin: 20px 0;
@@ -32,10 +44,16 @@ table {
 .element {
     width: 100%;
     height: 100%;
+    border: 1px solid transparent;
 }
 
 .element td {
     padding: 2px;
+}
+
+.element:hover{
+    border-color: blueviolet;
+    cursor: pointer;
 }
 
 .number {
@@ -45,6 +63,13 @@ table {
 .symbol {
     font-size: 25px;
     font-weight: bold;
+    text-decoration: none;
+}
+
+.symbol-small{
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
 }
 
 .name {
@@ -64,29 +89,14 @@ table {
 .empty {
     border: none;
 }
-.col-h                      {background-color: rgb(22, 244, 214);}
-.col-alkali-metal           { background-color: #d5ce0a; } /* Лужні метали*/
-.col-alkaline-earth-metal    { background-color: #f2e712; } /* Лужноземельні метали*/
-.col-transition-metal       { background-color: lightsalmon; } /* Перехідні метали */
-.col-post-transition-metal   {background-color: aqua;}
-.col-metalloid              { background-color: #baffc9; } /* Напівметали */
-.col-noble-gas              { background-color: #ff53c6; } /* Благородні гази */
-.col-actinide               { background-color:  lightblue} 
-.col-lanthanide              { background-color: lightpink;}
-.col-unknown                 { background-color: #e0e0e0; } /* Невідомо (Elementos Desconhecidos) */
-.col-non-metal               {background-color: #44eb5d;}
 
-/* Post-transition metals — метали після переходу */ .col-post-transition-metal { background-color: #d5c6e0; }
-
-.col-lantanoide {background-color: lightpink}
-.col-actinide { background-color: lightblue}
 
     </style>
 </head>
 
 <body>
     <div class="container">
-    <h1>Періодична таблиця</h1>
+    <h1>Періодична система хімічних елементів</h1>
     <div class="legend">
         <span class="col-alkali-metal"> Лужні метали </span>
         <span class="col-alkaline-earth-metal"> Лужноземельні метали </span> 
@@ -98,7 +108,13 @@ table {
         <span class="col-lanthanide"> Лантаноїди </span> 
         <span class="col-actinide"> Актиноїди </span>
         <span class="col-unknown"> Невідомо </span>  
-    </div>                    
+    </div> 
+    <div class="legend">
+        <div class="status"><span class="state"> C </span><span class="state transparent" > Тверде тіло </span></div>
+        <div class="status"><span class="state gas"> H </span><span class="state gas transparent" > Газ </span></div>
+        <div class="status"><span class="state liquid"> Hg </span><span class="state liquid transparent" > Рідина </span></div>
+        <div><span class="state anonym"> Rg </span><span class="state anonym transparent" > Невідомо </span></div> 
+    </div>                   
 
 <table class="periodic">
     <thead>
@@ -137,7 +153,7 @@ table {
                 <td class="electrons" rowspan="4">1</td>
             </tr>
             <tr>
-                <td class="symbol">H</td>
+                <td class="symbol gas">H</td>
             </tr>
             <tr>
                 <td class="name">Водень</td>
@@ -147,9 +163,26 @@ table {
             </tr>
         </table>
     </td>
+    <td>
+        <table class="element">
+            <tr>
+                <td class="number">Hомер</td>
+                <td class="electrons" rowspan="4"></td>
+            </tr>
+            <tr>
+                <td class="symbol symbol-small">Символ</td>
+            </tr>
+            <tr>
+                <td class="name">Назва</td>
+            </tr>
+            <tr>
+                <td class="mass">Маса</td>
+            </tr>
+        </table>
+    </td>
 
     <!-- 16 порожніх клітинок -->
-    <td colspan="16" class="empty"></td>
+    <td colspan="15" class="empty"></td>
 
     <!-- He -->
     <td>
@@ -159,7 +192,7 @@ table {
                 <td class="electrons" rowspan="4">2</td>
             </tr>
             <tr>
-                <td class="symbol">He</td>
+                <td class="symbol gas">He</td>
             </tr>
             <tr>
                 <td class="name">Гелій</td>
@@ -263,7 +296,7 @@ table {
                 <td class="electrons" rowspan="4">2<br>5</td>
             </tr>
             <tr>
-                <td class="symbol">N</td>
+                <td class="symbol gas">N</td>
             </tr>
             <tr>
                 <td class="name">Азот</td>
@@ -282,7 +315,7 @@ table {
                 <td class="electrons" rowspan="4">2<br>6</td>
             </tr>
             <tr>
-                <td class="symbol">O</td>
+                <td class="symbol gas">O</td>
             </tr>
             <tr>
                 <td class="name">Кисень</td>
@@ -301,7 +334,7 @@ table {
                 <td class="electrons" rowspan="4">2<br>7</td>
             </tr>
             <tr>
-                <td class="symbol">F</td>
+                <td class="symbol gas">F</td>
             </tr>
             <tr>
                 <td class="name">Флуор</td>
@@ -320,7 +353,7 @@ table {
                 <td class="electrons" rowspan="4">2<br>8</td>
             </tr>
             <tr>
-                <td class="symbol">Ne</td>
+                <td class="symbol gas">Ne</td>
             </tr>
             <tr>
                 <td class="name">Неон</td>
@@ -461,7 +494,7 @@ table {
                 <td class="electrons" rowspan="4">2<br>8<br>7</td>
             </tr>
             <tr>
-                <td class="symbol">Cl</td>
+                <td class="symbol gas">Cl</td>
             </tr>
             <tr>
                 <td class="name">Хлор</td>
@@ -480,7 +513,7 @@ table {
                 <td class="electrons" rowspan="4">2<br>8<br>8</td>
             </tr>
             <tr>
-                <td class="symbol">Ar</td>
+                <td class="symbol gas">Ar</td>
             </tr>
             <tr>
                 <td class="name">Аргон</td>
@@ -791,7 +824,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 7</td>
             </tr>
             <tr>
-                <td class="symbol">Br</td>
+                <td class="symbol liquid">Br</td>
             </tr>
             <tr>
                 <td class="name">Бром</td>
@@ -809,7 +842,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 8</td>
             </tr>
             <tr>
-                <td class="symbol">Kr</td>
+                <td class="symbol gas">Kr</td>
             </tr>
             <tr>
                 <td class="name">Криптон</td>
@@ -1139,7 +1172,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 18 8</td>
             </tr>
             <tr>
-                <td class="symbol">Xe</td>
+                <td class="symbol gas">Xe</td>
             </tr>
             <tr>
                 <td class="name">Ксенон</td>
@@ -1192,7 +1225,7 @@ table {
         </table>
     </td>
     <!-- 57-71 -->
-    <td>
+    <td >
         <table class="element">
             <tr>
                 <td class="number">57-71</td>
@@ -1361,7 +1394,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 32 18 2</td>
             </tr>
             <tr>
-                <td class="symbol">Hg</td>
+                <td class="symbol liquid">Hg</td>
             </tr>
             <tr>
                 <td class="name">Ртуть</td>
@@ -1469,7 +1502,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 32 18 8</td>
             </tr>
             <tr>
-                <td class="symbol">Rn</td>
+                <td class="symbol gas">Rn</td>
             </tr>
             <tr>
                 <td class="name">Радон</td>
@@ -1636,7 +1669,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 15 2</td>
             </tr>
             <tr>
-                <td class="symbol">Mt</td>
+                <td class="symbol anonym">Mt</td>
             </tr>
             <tr>
                 <td class="name">Майтнерій</td>
@@ -1654,7 +1687,7 @@ table {
                 <td class="electrons" rowspan="4">2 <br>8 18 32 32 17 1</td>
             </tr>
             <tr>
-                <td class="symbol">Ds</td>
+                <td class="symbol anonym">Ds</td>
             </tr>
             <tr>
                 <td class="name">Дармштадтій</td>
@@ -1672,7 +1705,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 1</td>
             </tr>
             <tr>
-                <td class="symbol">Rg</td>
+                <td class="symbol anonym">Rg</td>
             </tr>
             <tr>
                 <td class="name">Рентгеній</td>
@@ -1690,7 +1723,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 2</td>
             </tr>
             <tr>
-                <td class="symbol">Cn</td>
+                <td class="symbol anonym">Cn</td>
             </tr>
             <tr>
                 <td class="name">Коперницій</td>
@@ -1708,7 +1741,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 3</td>
             </tr>
             <tr>
-                <td class="symbol">Nh</td>
+                <td class="symbol anonym">Nh</td>
             </tr>
             <tr>
                 <td class="name">Унунтрій</td>
@@ -1726,7 +1759,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 4</td>
             </tr>
             <tr>
-                <td class="symbol">Fl</td>
+                <td class="symbol anonym">Fl</td>
             </tr>
             <tr>
                 <td class="name">Флеровій</td>
@@ -1744,7 +1777,7 @@ table {
                 <td class="electrons" rowspan="4">2 <br>8 18 32 32 18 5</td>
             </tr>
             <tr>
-                <td class="symbol">Mc</td>
+                <td class="symbol anonym">Mc</td>
             </tr>
             <tr>
                 <td class="name">Унунпентій</td>
@@ -1762,7 +1795,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 6</td>
             </tr>
             <tr>
-                <td class="symbol">Lv</td>
+                <td class="symbol anonym">Lv</td>
             </tr>
             <tr>
                 <td class="name">Ліверморій</td>
@@ -1780,7 +1813,7 @@ table {
                 <td class="electrons" rowspan="4">2 <br>8 18 32 32 18 7</td>
             </tr>
             <tr>
-                <td class="symbol">Ts</td>
+                <td class="symbol anonym">Ts</td>
             </tr>
             <tr>
                 <td class="name">Унунсептій</td>
@@ -1798,7 +1831,7 @@ table {
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 8</td>
             </tr>
             <tr>
-                <td class="symbol">Og</td>
+                <td class="symbol anonym">Og</td>
             </tr>
             <tr>
                 <td class="name">Унуноктій</td>
