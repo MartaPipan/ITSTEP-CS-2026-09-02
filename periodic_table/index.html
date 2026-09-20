@@ -35,7 +35,6 @@ table {
 }
 
 .element td {
-    border: 1px solid white;
     padding: 2px;
 }
 
@@ -66,14 +65,16 @@ table {
     border: none;
 }
 
-.col-alkali-metal           { background-color: #ffb3ba; } /* Лужні метали*/
-.col-alkaline-earth-metal    { background-color: #fffcba; } /* Лужноземельні метали*/
-.col-transition-metal       { background-color: #ffffba; } /* Перехідні метали */
+.col-alkali-metal           { background-color: #d5ce0a; } /* Лужні метали*/
+.col-alkaline-earth-metal    { background-color: #f2e712; } /* Лужноземельні метали*/
+.col-transition-metal       { background-color: lightsalmon; } /* Перехідні метали */
+.col-post-transition-metal   {background-color: aqua;}
 .col-metalloid              { background-color: #baffc9; } /* Напівметали */
-.col-non-metal              { background-color: #bae1ff; } /* Неметали */
-.col-noble-gas              { background-color: #e8bcf0; } /* Благородні гази */
-.col-actinide               { background-color: #f3c68f; } /* Pêssego */
-.col-cinza                  { background-color: #e0e0e0; } /* Cinza Neutro (Elementos Desconhecidos) */
+.col-noble-gas              { background-color: #ff53c6; } /* Благородні гази */
+.col-actinide               { background-color:  lightblue} 
+.col-lanthanide              { background-color: lightpink;}
+.col-unknown                 { background-color: #e0e0e0; } /* Невідомо (Elementos Desconhecidos) */
+.col-non-metal               {background-color: #44eb5d;}
 
 /* Post-transition metals — метали після переходу */ .col-post-transition-metal { background-color: #d5c6e0; }
 
@@ -87,16 +88,16 @@ table {
     <div class="container">
     <h1>Періодична таблиця</h1>
     <div class="legend">
-        <!-- Невідомо --> <span class="col-unknown"> Невідомо </span> 
-        <!-- Лужні метали --> <span class="col-alkali-metal"> Лужні метали </span>
-        <!-- Лужноземельні метали --> <span class="col-alkaline-earth-metal"> Лужноземельні метали </span> 
-        <!-- Перехідні метали --> <span class="col-transition-metal"> Перехідні метали </span> 
-        <!-- Post-transition metals --> <span class="col-post-transition-metal"> Метали після переходу </span> 
-        <!-- Напівметали --> <span class="col-metalloid"> Напівметали </span>
-        <!-- Інші неметали --> <span class="col-other-non-metal"> Інші неметали </span> 
-        <!-- Благородні гази --> <span class="col-noble-gas"> Благородні гази </span>
-        <!-- Лантаноїди --> <span class="col-lanthanide"> Лантаноїди </span> 
-        <!-- Актиноїди --> <span class="col-actinide"> Актиноїди </span> 
+        <span class="col-alkali-metal"> Лужні метали </span>
+        <span class="col-alkaline-earth-metal"> Лужноземельні метали </span> 
+        <span class="col-transition-metal"> Перехідні метали </span> 
+        <span class="col-post-transition-metal"> Метали після переходу </span> 
+        <span class="col-metalloid"> Напівметали </span>
+        <span class="col-non-metal"> Інші неметали </span> 
+        <span class="col-noble-gas"> Благородні гази </span>
+        <span class="col-lanthanide"> Лантаноїди </span> 
+        <span class="col-actinide"> Актиноїди </span>
+        <span class="col-unknown"> Невідомо </span>  
     </div>                    
 
 <table class="periodic">
@@ -152,7 +153,7 @@ table {
 
     <!-- He -->
     <td>
-        <table class="element">
+        <table class="element col-noble-gas">
             <tr>
                 <td class="number">2</td>
                 <td class="electrons" rowspan="4">2</td>
@@ -196,7 +197,7 @@ table {
 
     <!-- Be -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">4</td>
                 <td class="electrons" rowspan="4">2<br>2</td>
@@ -218,7 +219,7 @@ table {
 
     <!-- B -->
     <td>
-        <table class="element col-alkaline-earth-metal">
+        <table class="element col-metalloid">
             <tr>
                 <td class="number">5</td>
                 <td class="electrons" rowspan="4">2<br>3</td>
@@ -237,7 +238,7 @@ table {
 
     <!-- C -->
     <td>
-        <table class="element">
+        <table class="element col-non-metal">
             <tr>
                 <td class="number">6</td>
                 <td class="electrons" rowspan="4">2<br>4</td>
@@ -256,7 +257,7 @@ table {
 
     <!-- N -->
     <td>
-        <table class="element">
+        <table class="element col-non-metal">
             <tr>
                 <td class="number">7</td>
                 <td class="electrons" rowspan="4">2<br>5</td>
@@ -275,7 +276,7 @@ table {
 
     <!-- O -->
     <td>
-        <table class="element">
+        <table class="element col-non-metal">
             <tr>
                 <td class="number">8</td>
                 <td class="electrons" rowspan="4">2<br>6</td>
@@ -294,7 +295,7 @@ table {
 
     <!-- F -->
     <td>
-        <table class="element">
+        <table class="element col-non-metal">
             <tr>
                 <td class="number">9</td>
                 <td class="electrons" rowspan="4">2<br>7</td>
@@ -313,7 +314,7 @@ table {
 
     <!-- Ne -->
     <td>
-        <table class="element">
+        <table class="element col-noble-gas">
             <tr>
                 <td class="number">10</td>
                 <td class="electrons" rowspan="4">2<br>8</td>
@@ -357,7 +358,7 @@ table {
 
     <!-- Mg -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">12</td>
                 <td class="electrons" rowspan="4">2<br>8<br>2</td>
@@ -376,9 +377,9 @@ table {
 
     <td colspan="10" class="empty"></td>
 
-    <!-- Al -->
+    <!-- 13 -->
     <td>
-        <table class="element">
+        <table class="element col-post-transition-metal">
             <tr>
                 <td class="number">13</td>
                 <td class="electrons" rowspan="4">2<br>8<br>3</td>
@@ -397,7 +398,7 @@ table {
 
     <!-- Si -->
     <td>
-        <table class="element col-alkaline-earth-metal">
+        <table class="element col-metalloid">
             <tr>
                 <td class="number">14</td>
                 <td class="electrons" rowspan="4">2<br>8<br>4</td>
@@ -416,7 +417,7 @@ table {
 
     <!-- P -->
     <td>
-        <table class="element">
+        <table class="element col-non-metal">
             <tr>
                 <td class="number">15</td>
                 <td class="electrons" rowspan="4">2<br>8<br>5</td>
@@ -435,7 +436,7 @@ table {
 
     <!-- S -->
     <td>
-        <table class="element">
+        <table class="element col-non-metal">
             <tr>
                 <td class="number">16</td>
                 <td class="electrons" rowspan="4">2<br>8<br>6</td>
@@ -454,7 +455,7 @@ table {
 
     <!-- Cl -->
     <td>
-        <table class="element">
+        <table class="element col-non-metal">
             <tr>
                 <td class="number">17</td>
                 <td class="electrons" rowspan="4">2<br>8<br>7</td>
@@ -473,7 +474,7 @@ table {
 
     <!-- Ar -->
     <td>
-        <table class="element">
+        <table class="element col-noble-gas">
             <tr>
                 <td class="number">18</td>
                 <td class="electrons" rowspan="4">2<br>8<br>8</td>
@@ -514,7 +515,7 @@ table {
     </td>
     <!-- Ca -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">20</td>
                 <td class="electrons" rowspan="4">2 <br>8<br> 8 <br>2</td>
@@ -532,7 +533,7 @@ table {
     </td>
     <!-- 21 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">21</td>
                 <td class="electrons" rowspan="4">2<br>8<br>9<br>2</td>
@@ -550,7 +551,7 @@ table {
     </td>
     <!-- 22 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">22</td>
                 <td class="electrons" rowspan="4">2<br> 8 10 2</td>
@@ -568,7 +569,7 @@ table {
     </td>
     <!-- 23 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">23</td>
                 <td class="electrons" rowspan="4">2<br> 8 11 2</td>
@@ -586,7 +587,7 @@ table {
     </td>
     <!-- 24 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">24</td>
                 <td class="electrons" rowspan="4">2 <br>8 13 1</td>
@@ -604,7 +605,7 @@ table {
     </td>
     <!-- 25 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">25</td>
                 <td class="electrons" rowspan="4">2 18 13 2</td>
@@ -622,7 +623,7 @@ table {
     </td>
     <!-- 26 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">26</td>
                 <td class="electrons" rowspan="4">2<br> 8 14 2</td>
@@ -640,7 +641,7 @@ table {
     </td>
     <!-- 27 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">27</td>
                 <td class="electrons" rowspan="4">2<br> 8 15 2</td>
@@ -658,7 +659,7 @@ table {
     </td>
     <!-- 28 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">28</td>
                 <td class="electrons" rowspan="4">2<br> 8 16 2</td>
@@ -676,7 +677,7 @@ table {
     </td>
     <!-- 29 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">29</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 1</td>
@@ -694,7 +695,7 @@ table {
     </td>
     <!-- 30 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">30</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 2</td>
@@ -712,7 +713,7 @@ table {
     </td>
     <!-- 31 -->
     <td>
-        <table class="element">
+        <table class="element col-post-transition-metal">
             <tr>
                 <td class="number">31</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 3</td>
@@ -730,7 +731,7 @@ table {
     </td>
     <!-- 32 -->
     <td>
-        <table class="element col-alkaline-earth-metal">
+        <table class="element col-metalloid">
             <tr>
                 <td class="number">32</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 4</td>
@@ -748,7 +749,7 @@ table {
     </td>
     <!-- 33 -->
     <td>
-        <table class="element col-alkaline-earth-metal">
+        <table class="element col-metalloid">
             <tr>
                 <td class="number">33</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 5</td>
@@ -766,7 +767,7 @@ table {
     </td>
     <!-- 34 -->
     <td>
-        <table class="element">
+        <table class="element col-non-metal">
             <tr>
                 <td class="number">34</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 6</td>
@@ -784,7 +785,7 @@ table {
     </td>
     <!-- 35 -->
     <td>
-        <table class="element">
+        <table class="element col-non-metal">
             <tr>
                 <td class="number">35</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 7</td>
@@ -802,7 +803,7 @@ table {
     </td>
     <!-- 36 -->
     <td>
-        <table class="element">
+        <table class="element col-noble-gas">
             <tr>
                 <td class="number">36</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 8</td>
@@ -843,7 +844,7 @@ table {
     </td>
     <!-- 38 -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">38</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 8 <br>2</td>
@@ -861,7 +862,7 @@ table {
     </td>
     <!-- 39 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">39</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 9<br> 2</td>
@@ -879,7 +880,7 @@ table {
     </td>
     <!-- 40 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">40</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 10 2</td>
@@ -897,7 +898,7 @@ table {
     </td>
     <!-- 41 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">41</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 12 2</td>
@@ -915,7 +916,7 @@ table {
     </td>
     <!-- 42 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">42</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 13 1</td>
@@ -933,7 +934,7 @@ table {
     </td>
     <!-- 43 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">43</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 13 2</td>
@@ -951,7 +952,7 @@ table {
     </td>
     <!-- 44 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">44</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 15 1</td>
@@ -969,7 +970,7 @@ table {
     </td>
     <!-- 45 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">45</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 16 1</td>
@@ -987,7 +988,7 @@ table {
     </td>
     <!-- 46 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">46</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 18</td>
@@ -1005,7 +1006,7 @@ table {
     </td>
     <!-- 47 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">47</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 18 1</td>
@@ -1023,7 +1024,7 @@ table {
     </td>
     <!-- 48 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">48</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 18 2</td>
@@ -1041,7 +1042,7 @@ table {
     </td>
     <!-- 49 -->
     <td>
-        <table class="element">
+        <table class="element col-post-transition-metal">
             <tr>
                 <td class="number">49</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 18 3</td>
@@ -1060,7 +1061,7 @@ table {
     </td>
     <!-- 50 -->
     <td>
-        <table class="element">
+        <table class="element col-post-transition-metal">
             <tr>
                 <td class="number">50</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 18 4</td>
@@ -1078,7 +1079,7 @@ table {
     </td>
     <!-- 51 -->
     <td>
-        <table class="element col-alkaline-earth-metal">
+        <table class="element col-metalloid">
             <tr>
                 <td class="number">51</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 18 5</td>
@@ -1096,7 +1097,7 @@ table {
     </td>
     <!-- 52 -->
     <td>
-        <table class="element col-alkaline-earth-metal">
+        <table class="element col-metalloid">
             <tr>
                 <td class="number">52</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 18 6</td>
@@ -1114,7 +1115,7 @@ table {
     </td>
     <!-- 53 -->
     <td>
-        <table class="element">
+        <table class="element col-non-metal">
             <tr>
                 <td class="number">53</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 18 7</td>
@@ -1132,7 +1133,7 @@ table {
     </td>
     <!-- 54 -->
     <td>
-        <table class="element">
+        <table class="element col-noble-gas">
             <tr>
                 <td class="number">54</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 18 8</td>
@@ -1174,7 +1175,7 @@ table {
     </td>
     <!-- 56 -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">56</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 18 8 <br> 2</td>
@@ -1210,7 +1211,7 @@ table {
     </td>
     <!-- 72 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">72</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 10 2</td>
@@ -1228,7 +1229,7 @@ table {
     </td>
     <!-- 73 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">73</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 11 2</td>
@@ -1246,7 +1247,7 @@ table {
     </td>
     <!-- 74 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">74</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 12 2</td>
@@ -1264,7 +1265,7 @@ table {
     </td>
     <!-- 75 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">75</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 13 2</td>
@@ -1282,7 +1283,7 @@ table {
     </td>
     <!-- 76 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">76</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 32 14 2</td>
@@ -1300,7 +1301,7 @@ table {
     </td>
     <!-- 77 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">77</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 32 15 2</td>
@@ -1318,7 +1319,7 @@ table {
     </td>
     <!-- 78 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">78</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 17 1</td>
@@ -1336,7 +1337,7 @@ table {
     </td>
     <!-- 79 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">79</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 18 1</td>
@@ -1354,7 +1355,7 @@ table {
     </td>
     <!-- 80 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">80</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 18 2</td>
@@ -1372,7 +1373,7 @@ table {
     </td>
     <!-- 81 -->
     <td>
-        <table class="element">
+        <table class="element col-post-transition-metal">
             <tr>
                 <td class="number">81</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 18 3</td>
@@ -1390,7 +1391,7 @@ table {
     </td>
     <!-- 82 -->
     <td>
-        <table class="element">
+        <table class="element col-post-transition-metal">
             <tr>
                 <td class="number">82</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 18 4</td>
@@ -1408,7 +1409,7 @@ table {
     </td>
     <!-- 83 -->
     <td>
-        <table class="element">
+        <table class="element col-post-transition-metal">
             <tr>
                 <td class="number">83</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 18 5</td>
@@ -1426,7 +1427,7 @@ table {
     </td>
     <!-- 84 -->
     <td>
-        <table class="element">
+        <table class="element col-post-transition-metal">
             <tr>
                 <td class="number">84</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 32 18 6</td>
@@ -1444,7 +1445,7 @@ table {
     </td>
     <!-- 85 -->
     <td>
-        <table class="element">
+        <table class="element col-metalloid">
             <tr>
                 <td class="number">85</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 18 7</td>
@@ -1462,7 +1463,7 @@ table {
     </td>
     <!-- 86 -->
     <td>
-        <table class="element">
+        <table class="element col-noble-gas">
             <tr>
                 <td class="number">86</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 18 8</td>
@@ -1504,7 +1505,7 @@ table {
     </td>
     <!-- 88 -->
     <td>
-        <table class="element">
+        <table class="element col-alkaline-earth-metal">
             <tr>
                 <td class="number">88</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 32 18 8 <br> 2</td>
@@ -1539,7 +1540,7 @@ table {
     </td>
     <!-- 104 -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">104</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 32 32 10 2</td>
@@ -1557,7 +1558,7 @@ table {
     </td>
     <!--105  -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">105</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 32 32 11 2</td>
@@ -1575,7 +1576,7 @@ table {
     </td>
     <!--  106-->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">106</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 32 32 12 2</td>
@@ -1593,7 +1594,7 @@ table {
     </td>
     <!--107  -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">107</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 13 2</td>
@@ -1611,7 +1612,7 @@ table {
     </td>
     <!--108  -->
     <td>
-        <table class="element">
+        <table class="element col-transition-metal">
             <tr>
                 <td class="number">108</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 14 2</td>
@@ -1629,7 +1630,7 @@ table {
     </td>
     <!-- 109 -->
     <td>
-        <table class="element">
+        <table class="element col-unknown">
             <tr>
                 <td class="number">109</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 15 2</td>
@@ -1647,7 +1648,7 @@ table {
     </td>
     <!-- 110 -->
     <td>
-        <table class="element">
+        <table class="element col-unknown">
             <tr>
                 <td class="number">110</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 32 32 17 1</td>
@@ -1665,7 +1666,7 @@ table {
     </td>
     <!-- 111 -->
     <td>
-        <table class="element">
+        <table class="element col-unknown">
             <tr>
                 <td class="number">111</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 1</td>
@@ -1683,7 +1684,7 @@ table {
     </td>
     <!-- 112 -->
     <td>
-        <table class="element">
+        <table class="element col-unknown">
             <tr>
                 <td class="number">112</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 2</td>
@@ -1701,7 +1702,7 @@ table {
     </td>
     <!-- 113 -->
     <td>
-        <table class="element">
+        <table class="element col-unknown">
             <tr>
                 <td class="number">113</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 3</td>
@@ -1719,7 +1720,7 @@ table {
     </td>
     <!-- 114 -->
     <td>
-        <table class="element">
+        <table class="element col-unknown">
             <tr>
                 <td class="number">114</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 4</td>
@@ -1737,7 +1738,7 @@ table {
     </td>
     <!-- 115 -->
     <td>
-        <table class="element">
+        <table class="element col-unknown">
             <tr>
                 <td class="number">115</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 32 32 18 5</td>
@@ -1755,7 +1756,7 @@ table {
     </td>
     <!--  116-->
     <td>
-        <table class="element">
+        <table class="element col-unknown">
             <tr>
                 <td class="number">116</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 6</td>
@@ -1773,7 +1774,7 @@ table {
     </td>
     <!-- 117 -->
     <td>
-        <table class="element">
+        <table class="element col-unknown">
             <tr>
                 <td class="number">117</td>
                 <td class="electrons" rowspan="4">2 <br>8 18 32 32 18 7</td>
@@ -1791,7 +1792,7 @@ table {
     </td>
     <!-- 118 -->
     <td>
-        <table class="element">
+        <table class="element col-unknown">
             <tr>
                 <td class="number">118</td>
                 <td class="electrons" rowspan="4">2<br> 8 18 32 32 18 8</td>
