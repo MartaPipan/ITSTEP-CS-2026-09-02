@@ -139,8 +139,8 @@ table {
 }
 
 .state {
-  width: 50px;
-  height: 50px;
+  width: 50;
+  height: 50;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +150,7 @@ table {
 }
 
 .transparent{
-  border-color: transparent;
+  border: transparent;
 }
 
 .additional-elements {
@@ -181,12 +181,35 @@ table {
   position: relative;
 }
 
+/* номер */
+.element-row > .element .number {
+  font-size: 12px;
+}
+
+/* символ */
+.element-row > .element .symbol {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* назва */
+.element-row > .element .name {
+  font-size: 11px;
+}
+
+/* маса */
+.element-row > .element .mass {
+  font-size: 10px;
+}
+
 /* електрони */
 .element-row > .element .electrons {
   position: absolute;
   right: 2px;
   top: 2px;
+
   width: 15px;
+
   text-align: center;
   font-size: 10px;
   line-height: 1.1;
