@@ -6,6 +6,11 @@ body {
     font-family: Arial, sans-serif
 }
 .arrow {
-    height: 1em;
-
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
 }
