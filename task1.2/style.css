@@ -12,13 +12,14 @@
 }
 
 body {
+    width: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(24, 24, 24);
 }
 
 .services {
-    width: 80%;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 50px auto;
